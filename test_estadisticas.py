@@ -5,6 +5,6 @@ from Estadisticas import Estadisticas
 
 class EstadisticasTest(TestCase):
 
-    def test_sumar(self):
-        Estadisticas().calcular()
+    def test_num_elementos_cadena_vacia(self):
+        self.assertEqual(Estadisticas().sumar(""), 0, "Numero de elementos Cadena vacia")
 

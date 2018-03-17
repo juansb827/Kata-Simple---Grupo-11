@@ -12,6 +12,9 @@ class EstadisticasTest(TestCase):
         response = [1, 1, 1]
         self.assertEqual(Estadisticas().calcular("1"), response, "Numero de elementos Cadena 1 elemento")
 
-    def test_num_elementos_cadena_uno(self):
+    def test_num_elementos_cadena_dos(self):
         response = [2, 1, 10]
         self.assertEqual(Estadisticas().calcular("10,1"), response, "Numero de elementos Cadena 2 elemento")
+
+    def test_num_elementos_cadena_N(self):
+        self.assertEqual(Estadisticas().calcular("10,7,5,3,1"), [5,1,10], "Numero de elementos Cadena N elementos")

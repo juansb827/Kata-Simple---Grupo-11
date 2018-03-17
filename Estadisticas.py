@@ -15,5 +15,5 @@ class Estadisticas:
             response.append(len(array))
             response.append(int(min(array)))
             response.append(int(max(array)))
-            response.append(sum(array) / len(array))
+            response.append((float(sum(array)) / float(len(array))))
             return response

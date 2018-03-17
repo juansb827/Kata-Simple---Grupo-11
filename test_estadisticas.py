@@ -18,8 +18,7 @@ class EstadisticasTest(TestCase):
         self.assertEqual(Estadisticas().calcular("10,2"), response, "Numero de elementos Cadena 2 elemento")
 
     def test_num_elementos_cadena_N(self):
-        self.assertEqual(Estadisticas().calcular("10,7,5,3,1"), [5, 1, 10,5], "Numero de elementos Cadena N elementos")
-        self.assertEqual(Estadisticas().calcular("10,10,10,10,10"), [5, 10, 10, 10], "Numero de elementos Cadena N elementos")
+        self.assertEqual(Estadisticas().calcular("10,7,5,3,1"), [5, 1, 10, 5.2], "Numero de elementos Cadena N elementos")
+        self.assertEqual(Estadisticas().calcular("10,10,10,10,10"), [5, 10, 10, 10],
+                         "Numero de elementos Cadena N elementos")
         self.assertEqual(Estadisticas().calcular("1,1,1,1,1"), [5, 1, 1, 1], "Numero de elementos Cadena N elementos")
-
-

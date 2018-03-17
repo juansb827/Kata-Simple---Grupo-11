@@ -12,3 +12,4 @@ class EstadisticasTest(TestCase):
 
     def test_num_elementos_dos(self):
         self.assertEqual(Estadisticas().calcular("1,2"), 2, "Numero de elementos cadena de 2 elemento")
+

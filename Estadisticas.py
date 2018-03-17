@@ -8,6 +8,7 @@ class Estadisticas:
             response.append(0)
             response.append(None)
             response.append(None)
+            response.append(None)
             return response
         elif len(cadenaInicial) == 1:
             array = cadenaInicial.split(',')

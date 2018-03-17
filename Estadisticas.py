@@ -10,23 +10,10 @@ class Estadisticas:
             response.append(None)
             response.append(None)
             return response
-        elif len(cadenaInicial) == 1:
-            array = cadenaInicial.split(',')
-            response.append(len(array))
-            response.append(int(min(array)))
-            response.append(int(max(array)))
-            response.append(int(min(array)))
-            return response
-        elif len(cadenaInicial) == 4:
-            array =  map(int, cadenaInicial.split(','))
-            response.append(len(array))
-            response.append(int(min(array)))
-            response.append(int(max(array)))
-            response.append( sum (array)/len(array) )
-            return response
         else:
             array = map(int, cadenaInicial.split(','))
             response.append(len(array))
             response.append(int(min(array)))
             response.append(int(max(array)))
+            response.append(sum(array) / len(array))
             return response

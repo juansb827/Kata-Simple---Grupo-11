@@ -15,3 +15,9 @@ class Estadisticas:
             response.append(int(min(array)))
             response.append(int(max(array)))
             return response
+        elif len(cadenaInicial) == 4:
+            array = cadenaInicial.split(',')
+            response.append(len(array))
+            response.append(int(min(array)))
+            response.append(int(max(array)))
+            return response

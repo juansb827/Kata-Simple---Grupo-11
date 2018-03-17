@@ -11,5 +11,5 @@ class Estadisticas:
         else:
             array = cadenaInicial.split(',')
             response.append(len(array))
-            response.append(min(array))
+            response.append(int(min(array)))
         return response

@@ -21,3 +21,9 @@ class Estadisticas:
             response.append(int(min(array)))
             response.append(int(max(array)))
             return response
+        else:
+            array = map(int, cadenaInicial.split(','))
+            response.append(len(array))
+            response.append(int(min(array)))
+            response.append(int(max(array)))
+            return response

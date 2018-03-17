@@ -18,10 +18,11 @@ class Estadisticas:
             response.append(int(min(array)))
             return response
         elif len(cadenaInicial) == 4:
-            array = cadenaInicial.split(',')
+            array =  map(int, cadenaInicial.split(','))
             response.append(len(array))
             response.append(int(min(array)))
             response.append(int(max(array)))
+            response.append( sum (array)/len(array) )
             return response
         else:
             array = map(int, cadenaInicial.split(','))
